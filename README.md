@@ -18,6 +18,21 @@ Hieronder volgen de oefeningen/stappen die samen een volledig werkend Memory-spe
 > [!CAUTION]
 > *Let Op*: Oefeningen 2 en 3 zijn iets moeilijker. De oefeningen volgen de volgorde van de spel-logica. Indien je deze te moeilijk vindt, sla ze dan over en kom er later op terug.
 
+> [!IMPORTANT]
+> *Tip* om geldige combinaties van kolommen en rijen te vinden.
+
+> [!CAUTION]
+> *Tip* om geldige combinaties van kolommen en rijen te vinden.
+
+> [!NOTE]
+> *Tip* om geldige combinaties van kolommen en rijen te vinden.
+
+> [!WARNING]
+> *Tip* om geldige combinaties van kolommen en rijen te vinden.
+
+
+
+
 <!--OEFENING 1------------------------------------------------------->
 
 <details>
@@ -75,13 +90,25 @@ Je maakt een methode die alle mogelijke combinaties van rijen en kolommen retour
 - Het totaal aantal cellen in het grid moet gelijk zijn aan *totalWords*.
 - Loop door mogelijke aantallen rijen van 1 tot *totalWords*.
 - Voor elk aantal rijen, controleer of *totalWords* gelijk kan worden verdeeld in kolommen. 
- 
+
+test:
 
 > [!TIP]
 > *Tip* om geldige combinaties van kolommen en rijen te vinden.
 
 > [!IMPORTANT]
 > *Tip* om geldige combinaties van kolommen en rijen te vinden.
+
+> [!CAUTION]
+> *Tip* om geldige combinaties van kolommen en rijen te vinden.
+
+> [!NOTE]
+> *Tip* om geldige combinaties van kolommen en rijen te vinden.
+
+> [!WARNING]
+> *Tip* om geldige combinaties van kolommen en rijen te vinden.
+
+
 
 <details> <summary>Tip</summary> Dit betekent dat totalWords % rijen == 0. </details>
 
