@@ -18,21 +18,6 @@ Hieronder volgen de oefeningen/stappen die samen een volledig werkend Memory-spe
 > [!CAUTION]
 > *Let Op*: Oefeningen 2 en 3 zijn iets moeilijker. De oefeningen volgen de volgorde van de spel-logica. Indien je deze te moeilijk vindt, sla ze dan over en kom er later op terug.
 
-> [!IMPORTANT]
-> *Tip* om geldige combinaties van kolommen en rijen te vinden.
-
-> [!CAUTION]
-> *Tip* om geldige combinaties van kolommen en rijen te vinden.
-
-> [!NOTE]
-> *Tip* om geldige combinaties van kolommen en rijen te vinden.
-
-> [!WARNING]
-> *Tip* om geldige combinaties van kolommen en rijen te vinden.
-
-
-
-
 <!--OEFENING 1------------------------------------------------------->
 
 <details>
@@ -90,28 +75,7 @@ Je maakt een methode die alle mogelijke combinaties van rijen en kolommen retour
 - Het totaal aantal cellen in het grid moet gelijk zijn aan *totalWords*.
 - Loop door mogelijke aantallen rijen van 1 tot *totalWords*.
 - Voor elk aantal rijen, controleer of *totalWords* gelijk kan worden verdeeld in kolommen. 
-
-test:
-
-> [!TIP]
-> *Tip* om geldige combinaties van kolommen en rijen te vinden.
-
-> [!IMPORTANT]
-> *Tip* om geldige combinaties van kolommen en rijen te vinden.
-
-> [!CAUTION]
-> *Tip* om geldige combinaties van kolommen en rijen te vinden.
-
-> [!NOTE]
-> *Tip* om geldige combinaties van kolommen en rijen te vinden.
-
-> [!WARNING]
-> *Tip* om geldige combinaties van kolommen en rijen te vinden.
-
-
-
-<details> <summary>Tip</summary> Dit betekent dat totalWords % rijen == 0. </details>
-
+  > *Tip* om geldige combinaties van kolommen en rijen te vinden. <details> <summary>Tip</summary> Dit betekent dat totalWords % rijen == 0. </details>
 - Je moet deze rijen en kolom-combinaties nog niet opslaan. Tel eerst hoeveel combinaties er zijn, zodat je weet hoe groot de 2D array is die je maakt om alle combinaties in op te slaan.
   *Als je met een List kan werken, dan kan je deze meteen opslaan.*
 
@@ -119,7 +83,6 @@ test:
 - Maak een index of teller aan die onthoudt waar je het volgende coördinaat kan opslaan in de 2D-array.
 - Doorloop opnieuw door alle rijen van 1 tot *totalWords*.
 - Indien totalWords gelijk verdeeld kan worden in kolommen, dan voeg je deze combinatie van rijen en kolommen toe aan de 2D-array. *(en verhoog je index)*
-
     
 <details>
 	<summary>Te moeilijk? Hieronder volgt een mogelijke oplossing van Oefening 2</summary><p>
@@ -159,7 +122,16 @@ static int[,] GenerateAllPossibleFormats(string[] singleWordArray)
 
 </details>
 
+
+<!--OEFENING 3------------------------------------------------------->
+
+<details> 
+
+<summary>
+
 ## Oefening 3: Laat de speler een gridformaat kiezen
+
+</summary>
 
 In deze oefening maak je een methode waarmee de speler een formaat voor het Memory-spel kan kiezen uit de mogelijke opties. Het doel is dat de speler interactief een formaat kiest via de console.
 
@@ -204,7 +176,17 @@ Kies een formaat door een nummer in te voeren:
     { 3, 4 }
 ```
 
+</details>
+
+<!--OEFENING 4------------------------------------------------------->
+
+<details>
+
+<summary>
+
 ## Oefening 4: Verdubbel de woorden in de array
+
+</summary>
 
 In deze oefening maak je een methode, *DuplicateWordsInArray(string[] words)*, die de woorden in een array verdubbelt. Dit is nodig omdat elk woord in een Memory-spel twee keer voorkomt. De methode retourneert een nieuwe array waarin elk woord twee keer voorkomt.
 
@@ -222,7 +204,17 @@ Je maakt een methode die een nieuwe array creëert waarin elk woord uit de input-
 - Gebruik een lus om elk woord uit de input-array toe te voegen aan de nieuwe array.
 - Voeg elk woord twee keer toe op een vrije plaats.
 
+</details>
+
+<!--OEFENING 5------------------------------------------------------->
+
+<details>
+
+<summary>
+
 ## Oefening 5: Schud de array van woorden
+
+</summary>
 
 In deze oefening maak je een methode, `ShuffleArray(string[] array)`, die de woorden in een array willekeurig door elkaar schudt. Dit is nodig om ervoor te zorgen dat de woorden in het Memory-spel niet op een voorspelbare volgorde staan.
 
@@ -233,8 +225,19 @@ Je moet hier eigenlijk zelfs geen waarde retourneren, aangezien je input paramet
 - Kies een random index `r` voor het huidige element.
 - Verwissel het huidige element met index `i` van plaats met de random index `r`.
 
+</details>
+
+<!--OEFENING 6------------------------------------------------------->
+
+
+<details>
+
+<summary>
 
 ## Oefening 6: Maak een 2D Memory-grid
+
+</summary>
+
 De methode `FillGridWithArray(string[] words, int rows, int cols)` maakt een willekeurig gevuld 2D-grid aan voor het Memory-spel. Het grid gebruikt de geshufflede woorden uit oefening 5 en plaatst deze één voor één in een 2D-array met de gekozen dimensies.
 
 **Stappen**
@@ -253,19 +256,51 @@ De methode `FillGridWithArray(string[] words, int rows, int cols)` maakt een wil
 
 ```
 
+</details>
+
+<!--OEFENING 7------------------------------------------------------->
+
+
+<details>
+
+<summary>
+
 ## Oefening 7: Controleer of alle woorden gevonden zijn
+
+</summary>
+
 Maak een methode die een 2D-bool array controleert. In de Main methode wordt er reeds een 2D-bool array aangemaakt waarin de gevonden woorden worden aangeduid.
 
 Schrijf de methode `AreAllValuesTrue(bool[,] isFound)` die enkel true retourneert als alle waardes in de array true zijn. Anders geeft de methode false terug.
 
+</details>
+
+<!--OEFENING 8------------------------------------------------------->
+
+<details>
+
+<summary>
+
 ## Oefening 8: Toon het Memory Grid
+
+</summary>
 
 De methode `ShowMemoryGrid(string[,] grid, bool[,] isFound)` toont het Memory-grid in de console. Het gebruikt de 2D-array van woorden en een bijbehorende boolean-array om te bepalen welke woorden zichtbaar zijn. Gevonden woorden worden weergegeven in groen, terwijl verborgen woorden met witte tekst als een * worden weergegeven.
 
 - Gebruik lussen om het grid te visualiseren.
 - Je kan met `Console.ForegroundColor = ConsoleColor.Green;` de kleur van de Console aanpassen.
 
+</details>
+
+<!--OEFENING 9------------------------------------------------------->
+
+<details>
+
+<summary>
+
 ## Oefening 9: Vraag de Speler om Coördinaten
+
+</summary>
 
 De methode `PromptCoordinates(int rows, int cols)` vraagt de speler om de coördinaten van een woord op het Memory-grid in te voeren. Het valideert de invoer om ervoor te zorgen dat de ingevoerde coördinaten binnen de grenzen van het grid liggen.
 
@@ -282,8 +317,18 @@ De methode retourneert een array met de ingegeven { rijIndex, kolomIndex }.
    </p>
 Gebruik vervolgens Oefening 10 om de gekozen { rijIndex, kolomIndex } te tonen.
 
+</details>
 
-# Oefening 10: Controleer en Verwerk een Match
+<!--OEFENING 10------------------------------------------------------->
+
+<details>
+
+<summary>
+
+## Oefening 10: Controleer en Verwerk een Match
+
+</summary>
+
 De methode `ShowTempWordsAndMemoryGrid(string[,] grid, bool[,] gevonden, int[] coord1)` en `ShowTempWordsAndMemoryGrid(string[,] grid, bool[,] gevonden, int[] coord1, int[] coord2)` tonen tijdelijk de woorden die de speler heeft gekozen op basis van de doorgegeven coördinaten in het gehele Memory-grid. 
 
 De gekozen woorden worden in het geel weergegeven om de speler te laten zien welke woorden tijdelijk zijn onthuld.
@@ -295,3 +340,4 @@ Overload de methodes door een versie te maken die één tijdelijk, geel woord onth
     <img src= "images/voorbeeld4.png" style="border: 2px solid grey;"/>
    </p>
 
+</details>
