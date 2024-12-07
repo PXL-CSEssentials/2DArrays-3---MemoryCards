@@ -18,7 +18,14 @@ Hieronder volgen de oefeningen/stappen die samen een volledig werkend Memory-spe
 > [!CAUTION]
 > *Let Op*: Oefeningen 2 en 3 zijn iets moeilijker. De oefeningen volgen de volgorde van de spel-logica. Indien je deze te moeilijk vindt, sla ze dan over en kom er later op terug.
 
+<!--OEFENING 1------------------------------------------------------->
+
+<details>
+<summary> 
+
 ## Oefening 1: Maak de array met alle woorden van het grid
+</summary>
+
 
 Maak een methode, `CreateWordArray()`, die een 1D-array met unieke woorden retourneert. Deze woorden worden gebruikt in het spel. De woorden in de array moeten uniek zijn. 
 
@@ -30,7 +37,16 @@ string[] words = CreateWordArray();
 // inhoud van words: Kat, Hond, Muis, Vogel, Paard, Vis
 ```
 
+</details>
+
+<!--OEFENING 2------------------------------------------------------->
+
+
+<details>
+<summary>
+
 ## Oefening 2: Bereken alle mogelijke formaten van het grid
+</summary>
 
 In deze oefening maak je een methode, `GenerateAllPossibleFormats(string[] words)`, die berekent welke mogelijke gridformaten (rijen x kolommen) kunnen worden gebruikt om een Memory-spel te spelen. Het grid moet alle woorden bevatten die verdubbeld worden, en elke combinatie van rijen en kolommen moet passen bij het totaal aantal woorden.
 
@@ -106,6 +122,8 @@ static int[,] GenerateAllPossibleFormats(string[] singleWordArray)
 }
 ```
 </p>
+</details>
+
 </details>
 
 ## Oefening 3: Laat de speler een gridformaat kiezen
