@@ -75,9 +75,10 @@ Je maakt een methode die alle mogelijke combinaties van rijen en kolommen retour
 - Het totaal aantal cellen in het grid moet gelijk zijn aan *totalWords*.
 - Loop door mogelijke aantallen rijen van 1 tot *totalWords*.
 - Voor elk aantal rijen, controleer of *totalWords* gelijk kan worden verdeeld in kolommen. 
-  
+
 > [!TIP]
-> 
+> Tip om geldige combinaties van kolommen en rijen te vinden
+
 <details> <summary>Tip</summary> Dit betekent dat totalWords % rijen == 0. </details>
 
 - Je moet deze rijen en kolom-combinaties nog niet opslaan. Tel eerst hoeveel combinaties er zijn, zodat je weet hoe groot de 2D array is die je maakt om alle combinaties in op te slaan.
