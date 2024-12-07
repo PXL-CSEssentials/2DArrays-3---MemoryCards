@@ -77,7 +77,8 @@ Je maakt een methode die alle mogelijke combinaties van rijen en kolommen retour
 - Voor elk aantal rijen, controleer of *totalWords* gelijk kan worden verdeeld in kolommen. 
   
 > [!TIP]
-> <details> <summary>Tip</summary> Dit betekent dat totalWords % rijen == 0. </details>
+> 
+<details> <summary>Tip</summary> Dit betekent dat totalWords % rijen == 0. </details>
 
 - Je moet deze rijen en kolom-combinaties nog niet opslaan. Tel eerst hoeveel combinaties er zijn, zodat je weet hoe groot de 2D array is die je maakt om alle combinaties in op te slaan.
   *Als je met een List kan werken, dan kan je deze meteen opslaan.*
