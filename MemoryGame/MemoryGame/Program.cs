@@ -8,12 +8,12 @@ public class Program
         string[] words = CreateWordArray();
 
         // Stap 2: Mogelijke gridformaten genereren
-        string[,] formats = GenerateAllPossibleFormats(words);
+        int[,] formats = GenerateAllPossibleFormats(words);
 
         // Stap 3: Gridformaat laten kiezen door de speler
-        string[] chosenFormat = ChooseMemoryGridDimensions(formats);
-        int numberOfRows = int.Parse(chosenFormat[0]);
-        int numberOfColumns = int.Parse(chosenFormat[1]);
+        int[] chosenFormat = ChooseMemoryGridDimensions(formats);
+        int numberOfRows = chosenFormat[0];
+        int numberOfColumns = chosenFormat[1];
 
         // Stap 4: Woorden verdubbelen
         string[] dubbleWordArray = DuplicateWordsInArray(words);
@@ -75,13 +75,13 @@ public class Program
     }
 
     // Stap 2: Mogelijke gridformaten genereren
-    static string[,] GenerateAllPossibleFormats(string[] singleWordArray)
+    static int[,] GenerateAllPossibleFormats(string[] singleWordArray)
     {
         throw new NotImplementedException();
     }
 
     // Stap 3: Gridformaat kiezen
-    static string[] ChooseMemoryGridDimensions(string[,] formats)
+    static int[] ChooseMemoryGridDimensions(int[,] formats)
     {
         throw new NotImplementedException();
     }
@@ -100,19 +100,19 @@ public class Program
     }
 
     // Stap 6: Grid vullen
-    static string[,] FillGridWithArray(string[] woorden, int rows, int cols)
+    static string[,] FillGridWithArray(string[] words, int rows, int cols)
     {
         throw new NotImplementedException();
     }
 
     // Stap 7: Alle kaarten gevonden?
-    static bool AreAllValuesTrue(bool[,] gevonden)
+    static bool AreAllValuesTrue(bool[,] isFound)
     {
         throw new NotImplementedException();
     }
 
     // Stap 8: Memory grid tonen
-    static void ShowMemoryGrid(string[,] grid, bool[,] gevonden)
+    static void ShowMemoryGrid(string[,] grid, bool[,] isFound)
     {
         throw new NotImplementedException();
     }
@@ -124,12 +124,12 @@ public class Program
     }
 
     // Stap 10: Tijdelijke woorden tonen
-    static void ShowTempWordsAndMemoryGrid(string[,] grid, bool[,] gevonden, int[] coord1, int[] coord2)
+    static void ShowTempWordsAndMemoryGrid(string[,] grid, bool[,] isFound, int[] coord1, int[] coord2)
     {
         throw new NotImplementedException();
     }
     // Stap 10
-    static void ShowTempWordsAndMemoryGrid(string[,] grid, bool[,] gevonden, int[] coord1)
+    static void ShowTempWordsAndMemoryGrid(string[,] grid, bool[,] isFound, int[] coord1)
     {
         throw new NotImplementedException();
     }
